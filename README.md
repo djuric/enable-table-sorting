@@ -4,6 +4,8 @@ This is a simple plugin that adds sorting capabilities to tables created with th
 
 It uses Interactivity API on the front-end to enable sorting functionality.
 
+https://github.com/user-attachments/assets/a23825e9-5fee-46dd-a3f7-4aef3a88cc86
+
 ## Installation
 
 1. Clone or download the repository to the `wp-content/plugins/enable-table-sorting` directory.
