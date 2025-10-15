@@ -1,0 +1,33 @@
+.wp-block-table {
+  &.is-style-sortable table {
+    thead th {
+      cursor: pointer;
+
+      &::after {
+        content: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28">\
+<path fill="%23000" d="M12 6l-5 6h10z"/>\
+<path fill="%23000" d="M12 20l5-6H7z"/>\
+</svg>');
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 28px;
+      }
+
+      &[aria-sort="ascending"]::after {
+        content: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
+<path fill="%23000" d="M12 16l5-5H7z"/>\
+</svg>');
+      }
+
+      &[aria-sort="descending"]::after {
+        content: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
+<path fill="%23000" d="M12 8l-5 5h10z"/>\
+</svg>');
+      }
+    }
+  }
+}
